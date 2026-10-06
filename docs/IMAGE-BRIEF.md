@@ -131,7 +131,7 @@ Dikey kemer kırpma (4:5), en az 1200×1500 px. Konu merkezde, üst %25 boş bı
 | `scenario-belek-golf` | Golf scramble turnuvası | golf |
 | `scenario-belek-garden` | Resort bahçesinde kokteyl gala'sı | table |
 
-## Rehber kapakları (18)
+## Rehber kapakları (35)
 3:2, en az 1200×800.
 
 | Yuva | Çekim brief'i (alt metin taslağı) | Yer tutucu sahne |
@@ -154,4 +154,21 @@ Dikey kemer kırpma (4:5), en az 1200×1500 px. Konu merkezde, üst %25 boş bı
 | `guide-incentive` | Incentive ödül seyahati | sail |
 | `guide-retreat` | Corporate retreat | wellness |
 | `guide-dealer` | Bayi toplantısı | meeting |
+| `guide-hotel-belek` | Belek'te resort ve golf sahası manzarası | golf |
+| `guide-hotel-lara` | Lara sahilinde otel ve deniz | coast |
+| `guide-venue-hub` | Antalya'da etkinlik mekânı; taş avlu ve kemerler | arches |
+| `guide-venue-hub-belek` | Belek'te resort bahçesi ve balo salonu girişi | golf |
+| `guide-congress-hotels` | Kongre salonu, tiyatro düzeni ve sahne | meeting |
+| `guide-congress-belek` | Belek'te kongre salonu ve fuaye | meeting |
+| `guide-meeting-hotels` | Otel toplantı odası, U düzeni | meeting |
+| `guide-meeting-belek` | Belek resort toplantı odası | meeting |
+| `guide-dealer-hotels` | Bayi toplantısı genel oturumu | meeting |
+| `guide-dealer-belek` | Belek'te bayi toplantısı ödül sahnesi | stage |
+| `guide-gala-venues` | Otel balo salonunda gala masaları | gala |
+| `guide-gala-belek` | Belek'te plaj gala'sı kurulumu | gala |
+| `guide-capacity-500` | 500 kişilik salon, sahne ve ışık | stage |
+| `guide-capacity-1000` | 1.000 kişilik kongre salonu | stage |
+| `guide-capacity-2000` | 2.000 kişilik büyük kongre salonu | stage |
+| `guide-launch-hotels` | Ürün lansmanı sahnesi, spot ışıkları | stage |
+| `guide-mice` | Antalya MICE: toplantı, incentive, kongre ve sergi | coast |
 

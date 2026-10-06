@@ -11,6 +11,9 @@ Aşağıdakiler **kod dışı** veya işletmeye özgü bilgi gerektirdiği için
 - [ ] **Search Console:** Domain mülkü doğrula → `sitemap.xml` gönder → URL denetimi (ana sayfa + 5 çekirdek sayfa).
 - [ ] **GTM/GA4:** ID'ler, `generate_lead` key event, Consent Mode.
 
+- [ ] **Otel kapasite teyidi:** her otelin MICE fact-sheet'i/satış ekibi yazılı teyidi → `hotels.ts`'te `pendingClaims` ve `trade-listing` kaynakları `official`'a çevrilir (docs/HOTEL-DATA.md). Teyitsiz rakam yayınlanmaz; 2.000 kişilik sayfa bu yüzden yayında değil.
+- [ ] **Otellerle ilişki beyanı:** resmî ortaklık yoksa şeffaflık notu aynen kalır; varsa metin ve marka kullanım şartları hukukçuyla güncellenir.
+
 ## Güçlü öneri
 - [ ] Google Business Profile (hizmet bölgesi: Antalya, Belek) ve tutarlı NAP; ardından `lib/schema.ts` → `LocalBusiness` + adres/geo/saat.
 - [ ] Gerçek vaka çalışmaları geldikçe "Örnek senaryo" kartlarının yanına **etiketli, gerçek** vaka bölümü (müşteri onayıyla). Sahte referans/logo eklemeyin.

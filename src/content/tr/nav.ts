@@ -52,6 +52,20 @@ export const nav: NavGroup[] = [
       { label: "Belek Gala Organizasyonu", href: "/belek/gala-organizasyonu" },
     ],
   },
+  {
+    label: "Mekân & Oteller",
+    links: [
+      { label: "Antalya Kurumsal Etkinlik Mekânları", href: "/rehberler/antalya-kurumsal-etkinlik-mekanlari" },
+      { label: "Belek Kurumsal Etkinlik Mekânları", href: "/rehberler/belek-kurumsal-etkinlik-mekanlari" },
+      { label: "Antalya Kongre Otelleri", href: "/rehberler/antalya-kongre-otelleri" },
+      { label: "Belek Kongre Otelleri", href: "/rehberler/belek-kongre-otelleri" },
+      { label: "Bayi Toplantısı Otelleri", href: "/rehberler/antalya-bayi-toplantisi-otelleri" },
+      { label: "Gala Mekânları", href: "/rehberler/antalya-gala-mekanlari" },
+      { label: "500 Kişilik Etkinlik Mekânları", href: "/rehberler/500-kisilik-etkinlik-mekanlari-antalya" },
+      { label: "1.000 Kişilik Kongre Otelleri", href: "/rehberler/1000-kisilik-kongre-otelleri-antalya" },
+      { label: "Antalya MICE Rehberi", href: "/rehberler/antalya-mice-rehberi" },
+    ],
+  },
   { label: "Rehberler", href: "/rehberler" },
 ];
 
@@ -60,10 +74,11 @@ export const footerNav = {
   antalya: nav[1].links!,
   belek: nav[2].links!,
   rehberler: [
-    { label: "Kurumsal Etkinlik Fikirleri", href: "/rehberler/kurumsal-etkinlik-fikirleri" },
-    { label: "Team Building Fikirleri", href: "/rehberler/team-building-fikirleri" },
-    { label: "Şirket Etkinliği Nasıl Planlanır?", href: "/rehberler/sirket-etkinligi-nasil-planlanir" },
+    { label: "Antalya Kongre Otelleri", href: "/rehberler/antalya-kongre-otelleri" },
+    { label: "Belek Kongre Otelleri", href: "/rehberler/belek-kongre-otelleri" },
+    { label: "Antalya MICE Rehberi", href: "/rehberler/antalya-mice-rehberi" },
     { label: "Antalya mı, Belek mi?", href: "/rehberler/antalya-mi-belek-mi" },
+    { label: "Team Building Fikirleri", href: "/rehberler/team-building-fikirleri" },
     { label: "Tüm rehberler", href: "/rehberler" },
   ],
 };

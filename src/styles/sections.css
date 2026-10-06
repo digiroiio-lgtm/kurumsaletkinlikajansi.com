@@ -144,3 +144,15 @@
 .gcard__text { color: var(--muted); font-size: 0.95rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 @media (min-width: 700px) { .gcards { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1040px) { .gcards { grid-template-columns: repeat(3, 1fr); } }
+
+/* ---------- Otel tablosu ---------- */
+.hotel-region { display: block; font-family: var(--font-body); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clay-dark); margin-top: 2px; }
+.hotel-block { margin-top: 24px; }
+.hotel-block .table { min-width: 720px; }
+.hotel-block .table tbody th a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: rgba(11, 29, 37, 0.35); }
+.hotel-block .table tbody th a:hover { color: var(--clay-dark); text-decoration: underline; text-underline-offset: 4px; }
+.disclaimer { margin-top: 40px; padding: 18px 20px; border: 1px solid var(--line); border-left: 4px solid var(--sea); background: var(--white); border-radius: 0 var(--radius) var(--radius) 0; font-size: 0.93rem; color: var(--muted); }
+.disclaimer strong { color: var(--ink); }
+@media (max-width: 720px) { .hotel-block .table { min-width: 0; } }
+
+@media (min-width: 900px) { .linkrows--cols { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 56px; } }

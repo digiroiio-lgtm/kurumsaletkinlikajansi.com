@@ -98,7 +98,7 @@ export const belekPages: PageContent[] = [
       },
     ],
     related: ["/kurumsal-etkinlik-organizasyonu", "/antalya/kurumsal-etkinlik", "/belek/team-building", "/belek/incentive", "/belek/kurumsal-etkinlik-mekanlari"],
-    guides: ["antalya-mi-belek-mi", "belek-kurumsal-etkinlik-mekani-secimi", "belekte-team-building-fikirleri"],
+    guides: ["antalya-mi-belek-mi", "belek-kurumsal-etkinlik-mekanlari", "belekte-team-building-fikirleri"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -404,7 +404,7 @@ export const belekPages: PageContent[] = [
       },
     ],
     related: ["/corporate-retreat", "/antalya/corporate-retreat", "/belek/kurumsal-etkinlik-mekanlari", "/belek/incentive"],
-    guides: ["corporate-retreat-nedir", "antalya-mi-belek-mi", "belek-kurumsal-etkinlik-mekani-secimi"],
+    guides: ["corporate-retreat-nedir", "antalya-mi-belek-mi", "belek-kurumsal-etkinlik-mekanlari"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -489,7 +489,7 @@ export const belekPages: PageContent[] = [
     faq: [
       {
         q: "Belek'te bir resort seçerken en önemli kriter nedir?",
-        a: "Grup büyüklüğü, program türü ve yiyecek-içecek kuralıdır. Etkinlik için salon, plaj ve bahçe imkânı ile otelin dış tedarikçiye yaklaşımı birlikte değerlendirilmelidir. Seçim detayları için [Belek'te mekân seçimi rehberi](/rehberler/belek-kurumsal-etkinlik-mekani-secimi) yardımcı olur.",
+        a: "Grup büyüklüğü, program türü ve yiyecek-içecek kuralıdır. Etkinlik için salon, plaj ve bahçe imkânı ile otelin dış tedarikçiye yaklaşımı birlikte değerlendirilmelidir. Seçim detayları için [Belek'te mekân seçimi rehberi](/rehberler/belek-kurumsal-etkinlik-mekanlari) yardımcı olur.",
       },
       {
         q: "Resort'ların fiyatları sezona göre ne kadar değişir?",
@@ -501,7 +501,7 @@ export const belekPages: PageContent[] = [
       },
     ],
     related: ["/kurumsal-etkinlik-mekanlari", "/antalya/kurumsal-etkinlik-mekanlari", "/belek/gala-organizasyonu", "/belek/kurumsal-etkinlik"],
-    guides: ["belek-kurumsal-etkinlik-mekani-secimi", "antalya-mi-belek-mi", "sirket-etkinligi-nasil-planlanir"],
+    guides: ["belek-kurumsal-etkinlik-mekanlari", "antalya-mi-belek-mi", "sirket-etkinligi-nasil-planlanir"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -603,6 +603,6 @@ export const belekPages: PageContent[] = [
       },
     ],
     related: ["/gala-organizasyonu", "/belek/kurumsal-etkinlik-mekanlari", "/belek/incentive", "/etkinlik-personeli"],
-    guides: ["belek-kurumsal-etkinlik-mekani-secimi", "antalya-mi-belek-mi", "sirket-etkinligi-nasil-planlanir"],
+    guides: ["belek-kurumsal-etkinlik-mekanlari", "antalya-mi-belek-mi", "sirket-etkinligi-nasil-planlanir"],
   },
 ];

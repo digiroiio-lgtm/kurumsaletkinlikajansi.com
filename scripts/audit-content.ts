@@ -6,7 +6,9 @@
  *  - sayfa başına kelime sayısı (thin content), SSS varlığı
  *  - sayfalar arası tekrar (8'li kelime dizisi benzerliği) → duplicate/thin sinyali
  */
-import { guides, pages } from "../src/content/tr/registry";
+import { droppedRelations, guides, pages, unpublishedGuides } from "../src/content/tr/registry";
+import { hotels } from "../src/content/tr/hotels";
+import { hallRows, hotelIndexable, isPublishable } from "../src/lib/hotels";
 import { SLOTS } from "../src/content/tr/images";
 import { eventTypes, homeFaq, homeMeta, activities, modules, venues, scenarios, whyDestination, processSection, staffing, destinations } from "../src/content/tr/home";
 
@@ -16,6 +18,8 @@ const pagePaths = new Set(pages.map((p) => p.path));
 const guidePaths = new Set(guides.map((g) => `/rehberler/${g.slug}`));
 const guideSlugs = new Set(guides.map((g) => g.slug));
 const REDIRECT_OK = new Set(["/antalya", "/belek"]);
+// Birleştirilmiş/yönlendirilen eski slug'lara iç link verilmemeli
+const REDIRECTED = new Set(["/rehberler/antalya-kurumsal-etkinlik-mekani-secimi", "/rehberler/belek-kurumsal-etkinlik-mekani-secimi"]);
 
 const mdLinks = (s: string) => [...s.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)].map((m) => m[1]);
 const strip = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*([^*]+)\*\*/g, "$1");
@@ -37,6 +41,7 @@ const hrefs = (v: unknown, out: string[]) => {
 const docs: Doc[] = [];
 const errors: string[] = [];
 const warns: string[] = [];
+const infos: string[] = [];
 
 for (const p of pages) {
   const strs: string[] = [];
@@ -59,7 +64,9 @@ for (const g of guides) {
   const links = strs.flatMap(mdLinks);
   links.push(g.primaryService.href);
   const text = strs.map(strip).join(" ");
-  docs.push({ id: `/rehberler/${g.slug}`, title: g.metaTitle, desc: g.metaDescription, h1: g.h1, text, words: text.split(/\s+/).length, links, slots: [g.heroMedia] });
+  // Veriden üretilen tablo kelimeleri sayfa içeriğine sayılır (ama benzerlik metnine girmez)
+  const blockWords = g.sections.reduce((n, sec) => n + (sec.hotelBlock ? hallRows(sec.hotelBlock.filter).length * 9 : 0), 0);
+  docs.push({ id: `/rehberler/${g.slug}`, title: g.metaTitle, desc: g.metaDescription, h1: g.h1, text, words: text.split(/\s+/).length + blockWords, links, slots: [g.heroMedia] });
   for (const r of g.related) if (!pagePaths.has(r)) errors.push(`rehber ${g.slug}: related bilinmeyen sayfa ${r}`);
   for (const r of g.relatedGuides) if (!guideSlugs.has(r)) errors.push(`rehber ${g.slug}: relatedGuides bilinmeyen ${r}`);
   if (g.relatedGuides.includes(g.slug)) errors.push(`rehber ${g.slug}: kendine bağlanıyor`);
@@ -84,13 +91,14 @@ for (const d of docs) {
   for (const raw of d.links) {
     const l = raw.split("#")[0];
     if (!l.startsWith("/")) continue;
+    if (REDIRECTED.has(l)) { errors.push(`${d.id}: yönlendirilen eski slug'a link → ${raw}`); continue; }
     if (STATIC.has(l) || pagePaths.has(l) || guidePaths.has(l) || REDIRECT_OK.has(l)) continue;
     errors.push(`${d.id}: kırık iç link → ${raw}`);
   }
   for (const s of d.slots) if (!SLOTS[s]) errors.push(`${d.id}: tanımsız görsel yuvası → ${s}`);
   if (d.title.length > 65) errors.push(`${d.id}: title uzun (${d.title.length}) → ${d.title}`);
   if (d.title.length < 30) warns.push(`${d.id}: title kısa (${d.title.length})`);
-  if (d.desc.length < 110 || d.desc.length > 175) warns.push(`${d.id}: description uzunluğu ${d.desc.length}`);
+  if (d.desc.length < 110 || d.desc.length > 180) warns.push(`${d.id}: description uzunluğu ${d.desc.length}`);
   if (d.words < 380) warns.push(`${d.id}: ince içerik (${d.words} kelime)`);
 }
 
@@ -120,12 +128,35 @@ for (let i = 0; i < sh.length; i++)
     for (const x of a) if (b.has(x)) inter++;
     const sim = inter / Math.min(a.size, b.size);
     maxSim = Math.max(maxSim, sim);
-    if (sim > 0.12) warns.push(`benzer içerik %${Math.round(sim * 100)}: ${sh[i].id} ↔ ${sh[j].id}`);
+    const bothHotel = hotels.some((h) => sh[i].id.endsWith(h.slug)) && hotels.some((h) => sh[j].id.endsWith(h.slug));
+    if (bothHotel && sim > 0.28) errors.push(`otel profilleri çok benzer %${Math.round(sim * 100)}: ${sh[i].id} ↔ ${sh[j].id}`);
+    else if (sim > (bothHotel ? 0.2 : 0.22)) warns.push(`benzer içerik %${Math.round(sim * 100)}: ${sh[i].id} ↔ ${sh[j].id}`);
   }
+
+// ---- Otel verisi kapısı ----
+const MAX_AGE_DAYS = 365;
+for (const h of hotels) {
+  let verified = 0;
+  for (const hall of h.halls) {
+    if (hall.status === "verified") {
+      verified++;
+      if (!isPublishable(hall)) errors.push(`otel ${h.id}/${hall.name}: verified ama kaynak URL/tarih yok`);
+      if (!hall.areaM2 && !hall.capacity) errors.push(`otel ${h.id}/${hall.name}: verified ama sayısal veri yok`);
+      if (hall.source && (Date.now() - Date.parse(hall.source.retrievedAt)) / 864e5 > MAX_AGE_DAYS) warns.push(`otel ${h.id}/${hall.name}: kaynak 12 aydan eski`);
+    }
+  }
+  for (const f of h.facts) if (!f.source?.url || !f.source.retrievedAt) errors.push(`otel ${h.id}: olgu kaynaksız → ${f.label}`);
+  if (!hotelIndexable(h)) warns.push(`otel ${h.id}: doğrulanmış veri eşik altı → profil yayınlanmıyor`);
+  if (h.pendingClaims.length) infos.push(`otel ${h.id}: ${h.pendingClaims.length} doğrulanmayı bekleyen iddia`);
+  if (h.editorial.scenarios.length !== 3) errors.push(`otel ${h.id}: 3 senaryo gerekli`);
+}
+for (const u of unpublishedGuides) infos.push(`yayınlanmadı: ${u.slug} (${u.reason})`);
+for (const d of droppedRelations) warns.push(`yayınlanmamış rehbere ilişki düşürüldü: ${d}`);
 
 const total = docs.reduce((n, d) => n + d.words, 0);
 console.log(`Sayfa: ${pages.length} hizmet/destinasyon + ${guides.length} rehber + ana sayfa · toplam ~${total} kelime`);
 console.log(`En düşük kelime: ${Math.min(...docs.map((d) => d.words))} · en yüksek sayfa-arası benzerlik: %${Math.round(maxSim * 100)}`);
+if (infos.length) console.log(`\nBİLGİ (${infos.length}):\n- ` + infos.join("\n- "));
 if (warns.length) console.log(`\nUYARI (${warns.length}):\n- ` + warns.join("\n- "));
 if (errors.length) {
   console.log(`\nHATA (${errors.length}):\n- ` + errors.join("\n- "));

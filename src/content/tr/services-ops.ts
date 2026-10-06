@@ -229,8 +229,8 @@ export const servicesOps: PageContent[] = [
         items: [
           { label: "Antalya kurumsal etkinlik mekânları", href: "/antalya/kurumsal-etkinlik-mekanlari", text: "Şehir otelleri, Kaleiçi, beach club ve tarihi alanlar." },
           { label: "Belek kurumsal etkinlik mekânları", href: "/belek/kurumsal-etkinlik-mekanlari", text: "Resort salonları, golf kulübü ve plaj alanları." },
-          { label: "Antalya'da mekân seçimi rehberi", href: "/rehberler/antalya-kurumsal-etkinlik-mekani-secimi", text: "Karar kriterleri ve karşılaştırma." },
-          { label: "Belek'te mekân seçimi rehberi", href: "/rehberler/belek-kurumsal-etkinlik-mekani-secimi", text: "Resort seçiminde dikkat edilecekler." },
+          { label: "Antalya kurumsal etkinlik mekânları rehberi", href: "/rehberler/antalya-kurumsal-etkinlik-mekanlari", text: "Karar kriterleri ve karşılaştırma." },
+          { label: "Belek kurumsal etkinlik mekânları rehberi", href: "/rehberler/belek-kurumsal-etkinlik-mekanlari", text: "Resort seçiminde dikkat edilecekler." },
         ],
       },
     ],
@@ -253,6 +253,6 @@ export const servicesOps: PageContent[] = [
       },
     ],
     related: ["/antalya/kurumsal-etkinlik-mekanlari", "/belek/kurumsal-etkinlik-mekanlari", "/kurumsal-etkinlik-organizasyonu", "/gala-organizasyonu"],
-    guides: ["antalya-kurumsal-etkinlik-mekani-secimi", "belek-kurumsal-etkinlik-mekani-secimi", "sirket-etkinligi-nasil-planlanir"],
+    guides: ["antalya-kurumsal-etkinlik-mekanlari", "belek-kurumsal-etkinlik-mekanlari", "sirket-etkinligi-nasil-planlanir"],
   },
 ];

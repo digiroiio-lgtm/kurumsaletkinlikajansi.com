@@ -2,10 +2,12 @@ import Link from "next/link";
 import type { Guide } from "@/content/types";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { slugify } from "@/lib/slug";
-import { SITE } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
 import { requirePage, requireGuide, guidePath } from "@/content/tr/registry";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Faq } from "./Faq";
+import { HotelTable } from "./HotelTable";
+import { hallRows, hotelIndexable } from "@/lib/hotels";
 import { JsonLd } from "./JsonLd";
 import { Media } from "./Media";
 import { QuoteSection } from "./QuoteSection";
@@ -26,9 +28,23 @@ export function GuideTemplate({ guide: g }: { guide: Guide }) {
   const minutes = Math.max(3, Math.round(words(g) / 200));
   const inlineAfter = Math.min(1, g.sections.length - 1);
 
+  // Otel listeleyen rehberlerde: yalnızca kendi (indekslenebilir) otel profillerimizi içeren ItemList
+  const listed = new Map<string, string>();
+  for (const sec of g.sections)
+    if (sec.hotelBlock)
+      for (const r of hallRows(sec.hotelBlock.filter)) if (hotelIndexable(r.hotel)) listed.set(r.hotel.id, r.hotel.slug);
+  const itemList = listed.size
+    ? [{
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: g.h1,
+        itemListElement: [...listed.values()].map((slug, i) => ({ "@type": "ListItem", position: i + 1, url: absoluteUrl(`/rehberler/${slug}`) })),
+      }]
+    : [];
+
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(crumbs), articleSchema(g), ...(g.faq ? [faqSchema(g.faq)] : [])]} />
+      <JsonLd data={[breadcrumbSchema(crumbs), articleSchema(g), ...(g.faq ? [faqSchema(g.faq)] : []), ...itemList]} />
 
       <section className="ghero">
         <div className="container ghero__grid">
@@ -119,6 +135,7 @@ export function GuideTemplate({ guide: g }: { guide: Guide }) {
                     </table>
                   </div>
                 )}
+                {s.hotelBlock && <HotelTable block={s.hotelBlock} label={s.h2} />}
                 {i === inlineAfter && (
                   <aside className="callout">
                     <p className="eyebrow">Fikri etkinliğe dönüştürün</p>
@@ -130,6 +147,12 @@ export function GuideTemplate({ guide: g }: { guide: Guide }) {
                 )}
               </div>
             ))}
+
+            {g.showDisclaimer && (
+              <aside className="disclaimer" aria-label="Şeffaflık notu">
+                <strong>Şeffaflık notu:</strong> {SITE.name} bağımsız bir etkinlik planlama ajansıdır; burada anılan otellerle resmî bir iş ortaklığı veya temsilcilik iddiasında bulunmuyoruz. Otel adları ve markalar ilgili sahiplerine aittir. Kapasite ve alan bilgileri yayımlanmış tesis ve MICE rehber verilerine dayanır; her satırın kaynağı tabloda verilmiştir ve teklif öncesi otel satış ekibiyle teyit edilir.
+              </aside>
+            )}
 
             <aside className="callout callout--end">
               <p className="eyebrow">Sonraki adım</p>
@@ -188,8 +211,10 @@ export function GuideTemplate({ guide: g }: { guide: Guide }) {
       <QuoteSection
         formId={`quote_guide_${g.slug}`}
         defaultType={g.defaultEventType}
-        heading="Fikirleri etkinliğe dönüştürelim"
-        text="Bu rehberdeki seçeneklerden hangisinin ekibinize uyduğunu birlikte belirleyelim; brief'inize göre konsept ve bütçe çerçevesi çıkaralım."
+        defaultLocation={g.quoteDefaults?.location}
+        defaultParticipants={g.quoteDefaults?.participants}
+        heading={g.ctaHeading ?? "Fikirleri etkinliğe dönüştürelim"}
+        text={g.ctaText ?? "Bu rehberdeki seçeneklerden hangisinin ekibinize uyduğunu birlikte belirleyelim; brief'inize göre konsept ve bütçe çerçevesi çıkaralım."}
       />
     </>
   );

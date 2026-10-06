@@ -7,6 +7,7 @@ type Props = {
   text?: string;
   defaultType?: EventTypeValue;
   defaultLocation?: string;
+  defaultParticipants?: number;
   formId: string;
   /** Sayfanın ana teklif bölümü id="teklif" taşır (sticky CTA ve #teklif bağlantıları için). */
   asAnchor?: boolean;
@@ -17,6 +18,7 @@ export function QuoteSection({
   text = "Etkinliğin türünü ve yaklaşık ölçeğini yazın; konsept, lokasyon ve bütçe çerçevesiyle size dönelim.",
   defaultType,
   defaultLocation,
+  defaultParticipants,
   formId,
   asAnchor = true,
 }: Props) {
@@ -61,7 +63,7 @@ export function QuoteSection({
           )}
         </div>
         <div className="quote-section__form">
-          <QuoteForm formId={formId} defaultType={defaultType} defaultLocation={defaultLocation} tone="paper" />
+          <QuoteForm formId={formId} defaultType={defaultType} defaultLocation={defaultLocation} defaultParticipants={defaultParticipants} tone="paper" />
         </div>
       </div>
     </section>

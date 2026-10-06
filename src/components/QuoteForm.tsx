@@ -10,6 +10,7 @@ import { phoneHref, whatsappHref } from "@/lib/site";
 type Props = {
   defaultType?: EventTypeValue;
   defaultLocation?: string;
+  defaultParticipants?: number;
   formId: string;
   /** Koyu zemin üzerinde mi? */
   tone?: "paper" | "ink";
@@ -45,7 +46,7 @@ function collectSource(): Record<string, string> {
   return out;
 }
 
-export function QuoteForm({ defaultType, defaultLocation, formId, tone = "paper" }: Props) {
+export function QuoteForm({ defaultType, defaultLocation, defaultParticipants, formId, tone = "paper" }: Props) {
   const uid = useId();
   const [step, setStep] = useState<1 | 2>(1);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
@@ -56,7 +57,7 @@ export function QuoteForm({ defaultType, defaultLocation, formId, tone = "paper"
     location: defaultLocation ?? "",
     date: "",
     dateFlexible: false,
-    participants: "",
+    participants: defaultParticipants ? String(defaultParticipants) : "",
     name: "",
     company: "",
     phone: "",
@@ -86,9 +87,18 @@ export function QuoteForm({ defaultType, defaultLocation, formId, tone = "paper"
         }
       }
       if (changed) sessionStorage.setItem("kea_utm", JSON.stringify(stored));
+      const kisi = sp.get("kisi");
+      const lokasyon = sp.get("lokasyon");
       const tur = sp.get("tur");
+      const patch: Partial<State> = {};
+      if (kisi && /^\d{1,6}$/.test(kisi)) patch.participants = kisi;
+      const loc = LOCATIONS.find((l) => l.toLowerCase().startsWith((lokasyon ?? "\u0000").toLowerCase()));
+      if (loc) patch.location = loc;
+      if (Object.keys(patch).length) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setV((s) => ({ ...s, ...patch }));
+      }
       // URL'den gelen ?tur= değeri yalnızca istemcide okunabilir (statik sayfa); hydration sonrası bir kez uygulanır.
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (tur && EVENT_TYPES.some((t) => t.value === tur)) setV((s) => ({ ...s, eventType: tur as EventTypeValue }));
     } catch {
       /* yok say */

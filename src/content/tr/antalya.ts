@@ -99,7 +99,7 @@ export const antalyaPages: PageContent[] = [
       },
     ],
     related: ["/kurumsal-etkinlik-organizasyonu", "/belek/kurumsal-etkinlik", "/antalya/team-building", "/antalya/incentive", "/kurumsal-etkinlik-mekanlari"],
-    guides: ["antalyada-sirket-etkinligi-fikirleri", "antalya-mi-belek-mi", "antalya-kurumsal-etkinlik-mekani-secimi"],
+    guides: ["antalyada-sirket-etkinligi-fikirleri", "antalya-mi-belek-mi", "antalya-kurumsal-etkinlik-mekanlari"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -369,7 +369,7 @@ export const antalyaPages: PageContent[] = [
       },
     ],
     related: ["/corporate-retreat", "/belek/corporate-retreat", "/antalya/kurumsal-etkinlik-mekanlari", "/antalya/kurumsal-etkinlik"],
-    guides: ["corporate-retreat-nedir", "antalya-mi-belek-mi", "antalya-kurumsal-etkinlik-mekani-secimi"],
+    guides: ["corporate-retreat-nedir", "antalya-mi-belek-mi", "antalya-kurumsal-etkinlik-mekanlari"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -556,7 +556,7 @@ export const antalyaPages: PageContent[] = [
       },
     ],
     related: ["/kurumsal-etkinlik-mekanlari", "/belek/kurumsal-etkinlik-mekanlari", "/gala-organizasyonu", "/antalya/kurumsal-etkinlik"],
-    guides: ["antalya-kurumsal-etkinlik-mekani-secimi", "sirket-etkinligi-nasil-planlanir", "antalya-mi-belek-mi"],
+    guides: ["antalya-kurumsal-etkinlik-mekanlari", "sirket-etkinligi-nasil-planlanir", "antalya-mi-belek-mi"],
   },
 
   /* ------------------------------------------------------------------ */

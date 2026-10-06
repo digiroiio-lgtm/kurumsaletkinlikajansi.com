@@ -366,7 +366,7 @@ export const servicesPrograms: PageContent[] = [
       },
     ],
     related: ["/belek/gala-organizasyonu", "/lansman-organizasyonu", "/etkinlik-personeli", "/kurumsal-etkinlik-mekanlari", "/incentive-organizasyonu"],
-    guides: ["sirket-etkinligi-nasil-planlanir", "kurumsal-etkinlik-butcesi-nasil-hazirlanir", "belek-kurumsal-etkinlik-mekani-secimi"],
+    guides: ["sirket-etkinligi-nasil-planlanir", "kurumsal-etkinlik-butcesi-nasil-hazirlanir", "belek-kurumsal-etkinlik-mekanlari"],
   },
 
   /* ------------------------------------------------------------------ */
@@ -686,6 +686,6 @@ export const servicesPrograms: PageContent[] = [
       },
     ],
     related: ["/bayi-toplantisi-organizasyonu", "/kurumsal-etkinlik-mekanlari", "/etkinlik-personeli", "/gala-organizasyonu"],
-    guides: ["sirket-etkinligi-nasil-planlanir", "kurumsal-etkinlik-butcesi-nasil-hazirlanir", "antalya-kurumsal-etkinlik-mekani-secimi"],
+    guides: ["sirket-etkinligi-nasil-planlanir", "kurumsal-etkinlik-butcesi-nasil-hazirlanir", "antalya-kurumsal-etkinlik-mekanlari"],
   },
 ];

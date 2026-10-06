@@ -44,3 +44,17 @@ Hedef (Perf ≥ 95, SEO 100, A11y ≥ 95, BP ≥ 95) **tüm ölçülen sayfalard
 - Canlı alan adında CrUX/PageSpeed Insights verisi henüz yok.
 - Form gerçek e-posta sağlayıcısına karşı denenmedi (webhook ile doğrulandı); Resend yolu kodlandı, ortam değişkenleri verilince test edilmeli.
 - Rehberler 400–600 kelime; SEO'da rekabetçi olmak için 700–1000'e çıkarılmalı ve uzman/gerçek örnek içermeli.
+
+## Ek: MICE rehber katmanı (otel/kapasite) — 2026-10-06
+
+| Test | Sonuç |
+|---|---|
+| `qa-crawl` (69 URL × 360/768/1440) | 0 sorun, 69 iç link geçerli |
+| `audit:content` | 0 hata; otel profilleri arası benzerlik en fazla %20 (uyarı eşiği), veri kapısı kuralları geçti |
+| Yayın kapısı | `2000-kisilik-kongre-salonlari-antalya` doğrulanmış otel 0 < 3 → **üretilmedi** (404, sitemap dışı) |
+| Yönlendirme | Eski `…-mekani-secimi` rehberleri → yeni hub (308 kalıcı) |
+| Form ön doldurma | `?tur=&kisi=&lokasyon=` → alanlar dolu; webhook yükünde kullanıcı değişikliği doğru |
+| Lighthouse mobil (hub, kongre oteli listesi, otel profili, 500 kişilik, rehber indeksi) | Perf 96–99 · A11y 100 · BP 100 · SEO 100 |
+| Header 1040/1080/1200 px | Taşma yok (5 menü grubu) |
+
+**Veri güvencesi sınırı:** Rakamlar web arama özetlerinden derlendi (resmî siteler ortamdan erişime kapalıydı); özetleyici hataları mümkündür. Yayın öncesi her otelin satış ekibinden yazılı teyit alınmalıdır (docs/HOTEL-DATA.md).

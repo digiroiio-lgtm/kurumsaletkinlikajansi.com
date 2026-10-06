@@ -23,6 +23,9 @@ const config: NextConfig = {
     return [
       { source: "/antalya", destination: "/antalya/kurumsal-etkinlik", permanent: true },
       { source: "/belek", destination: "/belek/kurumsal-etkinlik", permanent: true },
+      // Birleşen "mekân seçimi" rehberleri → yeni hub rehberler (301)
+      { source: "/rehberler/antalya-kurumsal-etkinlik-mekani-secimi", destination: "/rehberler/antalya-kurumsal-etkinlik-mekanlari", permanent: true },
+      { source: "/rehberler/belek-kurumsal-etkinlik-mekani-secimi", destination: "/rehberler/belek-kurumsal-etkinlik-mekanlari", permanent: true },
     ];
   },
   async headers() {

@@ -81,17 +81,90 @@ export type PageContent = {
   ctaText?: string;
 };
 
+/* ---------- Otel / kapasite veri modeli (docs/HOTEL-DATA.md) ---------- */
+export type Region = "belek" | "antalya-lara";
+export type EventTag =
+  | "kongre" | "konferans" | "bayi-toplantisi" | "satis-toplantisi" | "yonetim-toplantisi" | "workshop" | "egitim"
+  | "urun-lansmani" | "gala" | "odul-toreni" | "kokteyl" | "fuar" | "basin-lansmani" | "kick-off" | "board-meeting"
+  | "incentive" | "team-building" | "golf-etkinligi" | "retreat";
+export type Layout = "theatre" | "banquet" | "cocktail" | "classroom";
+export type Source = {
+  url: string;
+  label: string;
+  /** official: otelin kendi sayfası · trade-listing: MICE/venue rehber listesi */
+  type: "official" | "trade-listing";
+  retrievedAt: string; // ISO tarih
+};
+export type Hall = {
+  name: string;
+  areaM2?: number;
+  capacity?: Partial<Record<Layout, number>>;
+  divisible?: string;
+  /** Yalnızca `verified` + kaynaklı satırlar sayfada yayınlanır */
+  status: "verified" | "pending";
+  source?: Source;
+};
+export type HotelFact = { label: string; value: string; source: Source };
+export type Hotel = {
+  id: string;
+  slug: string; // /rehberler/<slug>
+  name: string;
+  region: Region;
+  segment: string;
+  positioning: string[];
+  eventTags: EventTag[];
+  outdoor: string[];
+  facts: HotelFact[];
+  halls: Hall[];
+  /** Doğrulanamayan/çelişen iddialar — sayfada GÖSTERİLMEZ, yalnızca denetim için */
+  pendingClaims: string[];
+  editorial: {
+    intro: string[];
+    indoor: string[];
+    outdoor: string[];
+    teamBuilding: string[];
+    gala: string[];
+    access: string;
+    scenarios: { size: number; text: string }[];
+  };
+};
+export type HotelFilter = {
+  region?: Region;
+  ids?: string[];
+  tag?: EventTag;
+  /** Doğrulanmış tek salon kapasitesi en az n olan oteller/salonlar */
+  minCapacity?: { layout: Layout; n: number };
+};
+export type HotelBlock = {
+  mode: "halls" | "hotels";
+  filter: HotelFilter;
+  layouts: Layout[];
+  caption?: string;
+};
+
 export type GuideSection = {
   h2: string;
   paras: string[];
   bullets?: string[];
   table?: { head: string[]; rows: string[][] };
+  /** Veriden otomatik üretilen otel/salon tablosu */
+  hotelBlock?: HotelBlock;
 };
 
 export type Guide = {
   slug: string;
-  category: "Fikirler" | "Planlama" | "Kavramlar" | "Destinasyon";
+  category: "Fikirler" | "Planlama" | "Kavramlar" | "Destinasyon" | "Oteller" | "Kapasite & Etkinlik Türü";
   intent: "informational" | "commercial-investigation";
+  /** hub: destinasyon mekân hub'ı · hotel: otel profili · capacity: kapasite/etkinlik türü listesi */
+  kind?: "hub" | "hotel" | "capacity";
+  hotelId?: string;
+  /** Bu rehberin yayınlanması için gereken en az doğrulanmış otel sayısı (capacity) */
+  minVerifiedHotels?: number;
+  /** Teklif formunu önceden dolduran varsayılanlar */
+  quoteDefaults?: { participants?: number; location?: string };
+  ctaHeading?: string;
+  ctaText?: string;
+  showDisclaimer?: boolean;
   metaTitle: string;
   metaDescription: string;
   h1: string;

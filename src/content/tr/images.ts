@@ -123,6 +123,23 @@ export const SLOTS: Record<string, Slot> = {
   "guide-incentive": { scene: "sail", alt: "Incentive ödül seyahati" },
   "guide-retreat": { scene: "wellness", alt: "Corporate retreat" },
   "guide-dealer": { scene: "meeting", alt: "Bayi toplantısı" },
+  "guide-hotel-belek": { scene: "golf", alt: "Belek'te resort ve golf sahası manzarası" },
+  "guide-hotel-lara": { scene: "coast", alt: "Lara sahilinde otel ve deniz" },
+  "guide-venue-hub": { scene: "arches", alt: "Antalya'da etkinlik mekânı; taş avlu ve kemerler" },
+  "guide-venue-hub-belek": { scene: "golf", alt: "Belek'te resort bahçesi ve balo salonu girişi" },
+  "guide-congress-hotels": { scene: "meeting", alt: "Kongre salonu, tiyatro düzeni ve sahne" },
+  "guide-congress-belek": { scene: "meeting", alt: "Belek'te kongre salonu ve fuaye" },
+  "guide-meeting-hotels": { scene: "meeting", alt: "Otel toplantı odası, U düzeni" },
+  "guide-meeting-belek": { scene: "meeting", alt: "Belek resort toplantı odası" },
+  "guide-dealer-hotels": { scene: "meeting", alt: "Bayi toplantısı genel oturumu" },
+  "guide-dealer-belek": { scene: "stage", alt: "Belek'te bayi toplantısı ödül sahnesi" },
+  "guide-gala-venues": { scene: "gala", alt: "Otel balo salonunda gala masaları" },
+  "guide-gala-belek": { scene: "gala", alt: "Belek'te plaj gala'sı kurulumu" },
+  "guide-capacity-500": { scene: "stage", alt: "500 kişilik salon, sahne ve ışık" },
+  "guide-capacity-1000": { scene: "stage", alt: "1.000 kişilik kongre salonu" },
+  "guide-capacity-2000": { scene: "stage", alt: "2.000 kişilik büyük kongre salonu" },
+  "guide-launch-hotels": { scene: "stage", alt: "Ürün lansmanı sahnesi, spot ışıkları" },
+  "guide-mice": { scene: "coast", alt: "Antalya MICE: toplantı, incentive, kongre ve sergi" },
 };
 
 export const getSlot = (key: string): Slot => SLOTS[key] ?? { scene: "coast", alt: "" };

@@ -56,3 +56,21 @@ Benzersiz title (≤ 65 karakter) ve description (≈ 110–175) · benzersiz H1
 ## 6. İçerik genişletme planı (sonraki dalga)
 
 Öncelik sırası `Master Prompt`'a göre: ① mevcut 12+13 ticari sayfaya **gerçek** vaka/fotoğraf ekleyin (E-E-A-T'nin en büyük kaldıraçı) → ② rehberleri 700–1000 kelimeye çıkarın (şu an 400–600) → ③ long-tail: *kurumsal yılbaşı etkinliği Antalya, Antalya yat turu kurumsal, Belek golf turnuvası kurumsal, Antalya yaz sezonu şirket pikniği, Kemer team building, Side kurumsal etkinlik* → ④ İngilizce `/en/`.
+
+
+## 7. MICE destinasyon rehberi katmanı (2026-10-06)
+
+Site, ajans sitesinden **Antalya + Belek MICE destination guide**'a genişletildi: otel → salon → kapasite → etkinlik türü → aktivite → teklif. Hacimler **yön etiketidir** (yüksek/orta/long-tail); sayısal aylık hacim Keyword Planner/Semrush ile sonradan kilitlenmeli.
+
+| Küme | Yayında | Hedef sorgu (yön) | Lead değeri |
+|---|---|---|---|
+| Destinasyon/mekân hub | `antalya-kurumsal-etkinlik-mekanlari`, `belek-kurumsal-etkinlik-mekanlari` | Antalya kurumsal etkinlik mekanları (yüksek), Belek … (orta-yüksek) | 10/10 |
+| Otel (MICE) | `antalya-kongre-otelleri`, `belek-kongre-otelleri`, `antalya-toplanti-otelleri`, `belek-toplanti-otelleri`, `antalya-bayi-toplantisi-otelleri`, `belek-bayi-toplantisi-otelleri` | kongre/toplantı otelleri (orta-yüksek) | 9–10/10 |
+| Mekân (gala/lansman) | `antalya-gala-mekanlari`, `belek-gala-mekanlari`, `belek-urun-lansmani-otelleri` | gala mekanları (yüksek/orta) | 9/10 |
+| Kapasite | `500-kisilik-etkinlik-mekanlari-antalya`, `1000-kisilik-kongre-otelleri-antalya` (+ 2000 kapıda) | N kişilik … (long-tail, brief aşaması) | 10/10 |
+| Pillar | `antalya-mice-rehberi` | MICE Antalya | — |
+| Otel profilleri | 10 adet `…-kurumsal-etkinlik` | otel adı + kurumsal etkinlik/MICE | 9/10 |
+
+**Çakışma çözümü:** eski "mekân seçimi" rehberleri hub rehberlere katıldı ve 308 (kalıcı) yönlendirildi; `/antalya|belek/kurumsal-etkinlik-mekanlari` ticari hizmet sayfaları kalır, hub rehbere ve rehber onlara bağlanır.
+**Sonraki dalga (yazılmadı):** aktivite/destinasyon rehberleri (beach team building, Belek beach olympics, rafting team building, Belek golf kurumsal etkinlik, şirket pikniği, outdoor team building, yacht, beach gala), `/en/` MICE hub'ı (MICE hotels Antalya/Belek, corporate event venues Antalya, team building Antalya Turkey).
+**Şema:** Article + ItemList (yalnızca kendi otel profillerimiz); otel için `Hotel/LodgingBusiness` işaretlemesi **yok**.

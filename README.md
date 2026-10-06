@@ -2,6 +2,7 @@
 
 Antalya & Belek'te kurumsal etkinlik, team building, incentive, toplantı, gala ve outdoor organizasyonları arayan şirketlerin yüksek niyetli Google trafiğini yakalayıp **nitelikli teklif talebine (lead)** dönüştüren site.
 
+**Kapsam:** ajans sitesi + Antalya/Belek MICE destinasyon rehberi (otel → salon → kapasite → etkinlik türü → teklif).
 **Stack:** Next.js 16 (App Router, statik üretim) · TypeScript · saf CSS (token tabanlı) · self-host font · JS bütçesi minimum.
 **Ana KPI:** trafik değil, `generate_lead` olayı (nitelikli kurumsal etkinlik talebi).
 
@@ -32,7 +33,8 @@ npm run build && npm start        # üretim derlemesi
 | [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md) | Referans analizi, tasarım ilkeleri, token'lar, bileşenler, erişilebilirlik |
 | [docs/SEO.md](docs/SEO.md) | Entity/intent haritası, ticari–bilgi ayrımı, iç link hunisi, schema, teknik SEO |
 | [docs/ANALYTICS.md](docs/ANALYTICS.md) | Olay sözlüğü, GTM/GA4 kurulumu, lead kalite alanları |
-| [docs/IMAGE-BRIEF.md](docs/IMAGE-BRIEF.md) | 110 görsel yuvasının çekim brief'i ve yerleştirme adımları |
+| [docs/HOTEL-DATA.md](docs/HOTEL-DATA.md) | **Otel/kapasite veri kapısı**: doğrulama kuralları, yayın eşikleri, yeni otel ekleme, marka duruşu |
+| [docs/IMAGE-BRIEF.md](docs/IMAGE-BRIEF.md) | 127 görsel yuvasının çekim brief'i ve yerleştirme adımları |
 | [docs/QA.md](docs/QA.md) | Mobil QA ve Lighthouse sonuçları |
 | [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md) | **Yayın öncesi yapılması gerekenler** (gerçek iletişim bilgisi, fotoğraf, KVKK, env, GSC) |
 
