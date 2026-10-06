@@ -1,0 +1,1 @@
+# kurumsaletkinlikajansi.com
