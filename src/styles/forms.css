@@ -1,0 +1,62 @@
+/* ---------- Teklif bölümü ---------- */
+.quote-section__grid { display: grid; gap: 40px; align-items: start; }
+.quote-section__points { margin-top: 28px; display: grid; gap: 12px; }
+.quote-section__points li { position: relative; padding-left: 28px; color: var(--mist); }
+.quote-section__points li::before { content: ""; position: absolute; left: 0; top: 0.85em; width: 16px; height: 2px; background: var(--gold); }
+.quote-section__alt { margin-top: 28px; font-size: 0.95rem; color: var(--mist); }
+@media (min-width: 960px) { .quote-section__grid { grid-template-columns: 0.9fr 1.1fr; gap: 80px; } .quote-section__copy { position: sticky; top: calc(var(--header-h) + 32px); } }
+
+/* ---------- Form ---------- */
+.quote { background: var(--paper); color: var(--text); border-radius: var(--radius-lg); padding: clamp(22px, 3vw, 36px); box-shadow: var(--shadow); }
+.quote__head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.quote__title { font-family: var(--font-display); font-size: 1.5rem; color: var(--ink); }
+.quote__step { font-size: 0.82rem; font-weight: 700; color: var(--muted); letter-spacing: 0.04em; white-space: nowrap; }
+.quote__bar { height: 3px; background: var(--line); margin: 14px 0 26px; border-radius: 3px; overflow: hidden; }
+.quote__bar span { display: block; height: 100%; background: var(--clay); transition: width 0.3s; }
+.quote__body { display: grid; gap: 20px; }
+.quote__submit { width: 100%; }
+.quote__actions { display: grid; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 560px) { .quote__actions { grid-template-columns: auto 1fr; } }
+.quote__fine { font-size: 0.85rem; color: var(--muted); text-align: center; margin-top: -6px; }
+.quote--done { text-align: left; }
+.quote__done-title { font-family: var(--font-display); font-size: 2rem; font-weight: 500; color: var(--ink); margin-bottom: 12px; }
+.quote__next { margin: 20px 0; display: grid; gap: 10px; counter-reset: n; }
+.quote__next li { counter-increment: n; display: grid; grid-template-columns: 28px 1fr; gap: 8px; }
+.quote__next li::before { content: counter(n); font-family: var(--font-display); color: var(--clay-dark); font-weight: 600; }
+.quote__alt { font-size: 0.95rem; color: var(--muted); }
+
+.field { display: grid; gap: 8px; min-width: 0; border: 0; padding: 0; margin: 0; }
+.field > label:not(.check), .field > legend { font-weight: 700; font-size: 0.92rem; color: var(--ink); padding: 0; }
+.field-row { display: grid; gap: 20px; }
+@media (min-width: 560px) { .field-row { grid-template-columns: 1fr 1fr; } }
+
+.field input:not([type="checkbox"]):not([type="radio"]), .field select, .field textarea {
+  width: 100%; background: var(--white); border: 1.5px solid rgba(11, 29, 37, 0.28); border-radius: var(--radius);
+  padding: 13px 14px; min-height: 50px; color: var(--ink);
+}
+.field textarea { resize: vertical; min-height: 96px; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--sea-2); outline-offset: 1px; border-color: var(--sea); }
+.field [aria-invalid="true"] { border-color: #b3261e; }
+.field__error { color: #b3261e; font-size: 0.88rem; font-weight: 600; }
+.field__error--block { padding: 12px 14px; background: #fdecea; border-radius: var(--radius); }
+.field__hint { font-size: 0.84rem; color: var(--muted); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { position: relative; cursor: pointer; }
+.chip input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+.chip span { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; border: 1.5px solid rgba(11, 29, 37, 0.28); border-radius: 99px; font-weight: 600; font-size: 0.93rem; background: var(--white); color: var(--ink); transition: background-color 0.15s, border-color 0.15s, color 0.15s; }
+.chip:hover span { border-color: var(--ink); }
+.chip.is-on span { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.chip:focus-within span { outline: 3px solid var(--sea-2); outline-offset: 2px; }
+
+.check { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; font-size: 0.92rem; color: var(--muted); cursor: pointer; font-weight: 500; }
+.check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--clay); }
+.check--inline { display: inline-grid; grid-template-columns: 22px auto; margin-top: 4px; }
+
+/* ---------- /teklif-al ---------- */
+.qpage { min-height: 70vh; }
+.qpage__grid { display: grid; gap: 40px; align-items: start; }
+.qpage__points li { color: var(--text); }
+.qpage__points li::before { background: var(--clay); }
+.qpage__alt { margin-top: 22px; color: var(--muted); font-size: 0.95rem; }
+@media (min-width: 960px) { .qpage__grid { grid-template-columns: 0.95fr 1.05fr; gap: 80px; } }
