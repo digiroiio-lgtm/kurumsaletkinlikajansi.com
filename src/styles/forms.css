@@ -2,7 +2,7 @@
 .quote-section__grid { display: grid; gap: 40px; align-items: start; }
 .quote-section__points { margin-top: 28px; display: grid; gap: 12px; }
 .quote-section__points li { position: relative; padding-left: 28px; color: var(--mist); }
-.quote-section__points li::before { content: ""; position: absolute; left: 0; top: 0.8em; width: 16px; height: 1.5px; background: var(--gold); }
+.quote-section__points li::before { content: ""; position: absolute; left: 0; top: 0.85em; width: 16px; height: 2px; background: var(--gold); }
 .quote-section__alt { margin-top: 28px; font-size: 0.95rem; color: var(--mist); }
 @media (min-width: 960px) { .quote-section__grid { grid-template-columns: 0.9fr 1.1fr; gap: 80px; } .quote-section__copy { position: sticky; top: calc(var(--header-h) + 32px); } }
 

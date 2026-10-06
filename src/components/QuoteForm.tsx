@@ -87,6 +87,8 @@ export function QuoteForm({ defaultType, defaultLocation, formId, tone = "paper"
       }
       if (changed) sessionStorage.setItem("kea_utm", JSON.stringify(stored));
       const tur = sp.get("tur");
+      // URL'den gelen ?tur= değeri yalnızca istemcide okunabilir (statik sayfa); hydration sonrası bir kez uygulanır.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (tur && EVENT_TYPES.some((t) => t.value === tur)) setV((s) => ({ ...s, eventType: tur as EventTypeValue }));
     } catch {
       /* yok say */

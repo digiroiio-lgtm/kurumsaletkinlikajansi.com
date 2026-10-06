@@ -85,7 +85,8 @@ body { padding-bottom: 76px; }
 .crumbs li + li::before { content: "/"; margin: 0 10px; opacity: 0.5; }
 .crumbs a { text-decoration: none; }
 .crumbs a:hover { color: var(--clay-dark); text-decoration: underline; }
-.crumbs [aria-current] { color: var(--ink); font-weight: 600; max-width: 42ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; }
+.crumbs li { min-width: 0; max-width: 100%; }
+.crumbs [aria-current] { color: var(--ink); font-weight: 600; max-width: min(42ch, 100%); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 .crumbs--dark li, .crumbs--dark [aria-current] { color: var(--mist); }
 
 /* ---------- Sayfa hero (hizmet / destinasyon) ---------- */
@@ -128,4 +129,10 @@ body { padding-bottom: 76px; }
   .gbody__grid { grid-template-columns: 240px minmax(0, 1fr); gap: 72px; }
   .toc { position: sticky; top: calc(var(--header-h) + 24px); align-self: start; }
   .toc__cta { display: inline-flex; }
+}
+
+/* Tek kolonlu grid'lerde içerik (ör. nowrap breadcrumb) kolonu viewport'tan geniş açmasın */
+@media (max-width: 999px) {
+  .phero__grid, .ghero__grid, .gbody__grid, .hhero__grid, .split, .index, .faq__grid, .quote-section__grid, .qpage__grid, .nextsec__grid, .staffing__grid, .dest, .wheel { grid-template-columns: minmax(0, 1fr); }
+  .phero__grid > *, .ghero__grid > *, .gbody__grid > *, .hhero__grid > *, .split > *, .index > *, .faq__grid > *, .quote-section__grid > *, .qpage__grid > *, .nextsec__grid > *, .staffing__grid > * { min-width: 0; }
 }

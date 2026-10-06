@@ -64,6 +64,18 @@ export const guidesConcepts: Guide[] = [
           "Incentive bütçesinin en büyük kalemleri genellikle konaklama ve program yoğunluğudur; tarih esnekliği ve omuz sezon bütçeyi ciddi biçimde etkiler. Destinasyon seçiminde erişim kolaylığı, konaklama kalitesi ve deneyim çeşitliliği belirleyicidir. Antalya ve Belek bu açıdan öne çıkan iki seçenektir; karşılaştırma için [Antalya mı, Belek mi?](/rehberler/antalya-mi-belek-mi) rehberine bakın.",
         ],
       },
+      {
+        h2: "Kazanma kriterleri nasıl tasarlanır?",
+        paras: [
+          "Kriter çok kolay olursa ödül değerini yitirir, çok zor olursa kimse denemez. İdeal incentive, katılımcıların yaklaşık beşte birinin ulaşabileceği bir hedef belirler ve ilerlemeyi dönem boyunca görünür kılar (sıralama tablosu, ara bildirim). Kriterler yazılı, ölçülebilir ve herkes için aynı olmalıdır.",
+        ],
+      },
+      {
+        h2: "Programın etkisi nasıl ölçülür?",
+        paras: [
+          "Yalnızca harcamayı değil, incentive dönemindeki satış artışını, katılımcı memnuniyetini ve programdan sonraki bağlılığı birlikte değerlendirin. Katılımcı anketi, etkinlik sonrası kısa bir görüşme ve bir sonraki dönem performansı, programın değerini daha gerçekçi gösterir.",
+        ],
+      },
     ],
     faq: [
       {
@@ -150,6 +162,18 @@ export const guidesConcepts: Guide[] = [
           "Sessiz, gün ışıklı bir çalışma salonu, break-out alanları, yürüyüş imkânı ve kaliteli yemek önemli. Yüksek sezon dışında Antalya ve Belek sakin bir odak ortamı sunar. Detaylar için [corporate retreat](/corporate-retreat), [Antalya corporate retreat](/antalya/corporate-retreat) ve [Belek corporate retreat](/belek/corporate-retreat) sayfalarına bakabilirsiniz.",
         ],
       },
+      {
+        h2: "Retreat gündemi nasıl yazılır?",
+        paras: [
+          "Gündemi üç bölümde kurun: durum tespiti (nerede olduğumuz), seçenek üretme (ne yapabiliriz) ve karar/eylem (ne yapacağız). Her bölüme yeterli süre ayırın ve en kritik kararı günün erken saatlerine koyun. Gündemi katılımcılara önceden gönderip hazırlık sorusu eklemek oturum verimini artırır.",
+        ],
+      },
+      {
+        h2: "Retreat sonrası takip",
+        paras: [
+          "Retreat'in en sık kaçırılan adımı takiptir. Kararları, sorumluları ve tarihleri içeren bir eylem listesini retreat bitmeden yazın; bir hafta içinde paylaşın ve 30–60 gün sonra kısa bir takip toplantısı planlayın. Böylece retreat tek seferlik bir deneyim değil, uygulanan bir karar süreci olur.",
+        ],
+      },
     ],
     faq: [
       {
@@ -233,6 +257,23 @@ export const guidesConcepts: Guide[] = [
         h2: "6. Etkinlik sonrası",
         paras: [
           "Toplantı sonrasında kısa bir memnuniyet anketi gönderin, sunumları ve fotoğrafları paylaşın ve eylem listesini takip edin. Bu adım, toplantının etkisini kalıcı hale getirir. Tüm süreci tek ekiple yürütmek için [bayi toplantısı organizasyonu](/bayi-toplantisi-organizasyonu) hizmetimizi inceleyebilirsiniz.",
+        ],
+      },
+      {
+        h2: "Sık yapılan hatalar",
+        paras: [],
+        bullets: [
+          "Bütün sunumları tek güne sıkıştırıp ağ kurma zamanını unutmak",
+          "Bayiye değil şirkete dönük sunumlar hazırlamak (bayi için ne değişiyor?)",
+          "Ödül töreninde isim ve unvan hatası, sahne yönetimi aksaklığı",
+          "Transfer ve oda dağıtımında son dakika karmaşası",
+          "Toplantı sonrası takibin yapılmaması",
+        ],
+      },
+      {
+        h2: "Bütçe ve zamanlama notları",
+        paras: [
+          "Toplantıyı bayilerin yoğun satış dönemine denk getirmeyin; çoğu sektörde sezon dışı veya yıl başı tercih edilir. Mekân ve otel için 4–6 ay önceden başlamak güvenlidir. Bütçede konaklama, salon, teknik altyapı ve ödül gecesi ana kalemlerdir; yurt dışı bayi varsa çeviri ve transfer ek yük getirir.",
         ],
       },
     ],

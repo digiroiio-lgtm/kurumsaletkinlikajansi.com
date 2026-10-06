@@ -188,7 +188,11 @@ export function SectionView({ s, tone }: { s: Section; tone: Tone }) {
               </tbody>
             </table>
           </div>
-          {s.note && <p className="table-note">{s.note}</p>}
+          {s.note && (
+            <p className="table-note">
+              <RichText text={s.note} />
+            </p>
+          )}
         </Shell>
       );
 

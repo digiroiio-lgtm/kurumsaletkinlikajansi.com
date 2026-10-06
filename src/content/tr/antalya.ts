@@ -10,7 +10,7 @@ export const antalyaPages: PageContent[] = [
     kind: "destination",
     metaTitle: "Antalya Kurumsal Etkinlik Organizasyonu | Şehir ve Sahil",
     metaDescription:
-      "Antalya'da kurumsal etkinlik: Kaleiçi, Konyaaltı, Lara, Kemer ve Side çevresinde team building, toplantı, gala ve incentive organizasyonu. Antalya etkinlik ajansı olarak teklif alın.",
+      "Antalya'da kurumsal etkinlik: Kaleiçi, Konyaaltı, Lara, Kemer ve Side çevresinde team building, toplantı, gala ve incentive organizasyonu. Teklif alın.",
     h1: "Antalya'da Kurumsal Etkinlik: Şehir, Sahil ve Tarih Bir Arada",
     eyebrow: "Antalya · Kurumsal etkinlik ajansı",
     lead:
@@ -108,7 +108,7 @@ export const antalyaPages: PageContent[] = [
     kind: "destination",
     metaTitle: "Antalya Team Building | Kaleiçi, Sahil ve Akdeniz Mutfağı",
     metaDescription:
-      "Antalya'da team building: Kaleiçi şehir görevleri, sahil olimpiyatları, Akdeniz mutfağı atölyeleri ve Düden çevresinde doğa programları. Antalya team building için teklif alın.",
+      "Antalya'da team building: Kaleiçi şehir görevleri, sahil olimpiyatları, Akdeniz mutfağı atölyeleri ve Düden çevresinde doğa programları. Teklif alın.",
     h1: "Antalya Team Building: Şehrin Kendisi Bir Oyun Alanı",
     eyebrow: "Antalya · Team building",
     lead:
@@ -342,6 +342,17 @@ export const antalyaPages: PageContent[] = [
           { title: "Kemer'de yaratıcılık atölyesi", text: "Çam ormanında bir otelde atölye günü, öğleden sonra tekne turu ve akşam grup yemeği.", group: "25 kişi", duration: "2 gün", format: "Orman + atölye + tekne", media: "scenario-antalya-boat" },
         ],
       },
+      {
+        kind: "steps",
+        eyebrow: "Hazırlık",
+        title: "Retreat'e sekiz haftalık hazırlık",
+        items: [
+          { title: "8 hafta önce", text: "Hedef, katılımcı listesi ve tarih aralığı; mekân tipi (butik otel, orman, yayla) belirlenir ve müsaitlik sorulur." },
+          { title: "5–6 hafta önce", text: "Mekân kesinleşir; gündem taslağı, kolaylaştırıcı ihtiyacı ve yemek-sosyal program planı hazırlanır." },
+          { title: "2–3 hafta önce", text: "Katılımcıya gündem, ulaşım ve kıyafet bilgisi gönderilir; hazırlık soruları paylaşılır." },
+          { title: "Retreat günleri", text: "Çalışma, mola ve sosyal program akışı yönetilir; çıktılar (karar, eylem listesi) kayıt altına alınır." },
+        ],
+      },
     ],
     faq: [
       {
@@ -422,6 +433,19 @@ export const antalyaPages: PageContent[] = [
         items: [
           { title: "Rafting + yayla yemeği", text: "Sabah transfer, rafting, nehir kenarı yemek ve dönüş. Kapanışta kısa değerlendirme.", group: "40 kişi", duration: "1 gün", format: "Nehir", media: "scenario-outdoor-rafting" },
           { title: "Kemer koy günü", text: "Sabah tekneyle koylar, öğle yüzme molası, öğleden sonra SUP; dönüşte sahilde gün batımı.", group: "60 kişi", duration: "1 gün", format: "Deniz", media: "scenario-antalya-boat" },
+        ],
+      },
+      {
+        kind: "checklist",
+        eyebrow: "Katılımcı hazırlığı",
+        title: "Antalya'da outdoor güne çıkmadan önce katılımcıya iletilenler",
+        items: [
+          "Kapalı ve rahat ayakkabı; suyla temas edecek aktivitelerde yedek kıyafet",
+          "Güneş kremi, şapka, güneş gözlüğü ve kişisel su şişesi",
+          "Sağlık durumu, alerji ve ilaç bilgisi (gerekli aktivitelerde yazılı beyan)",
+          "Buluşma noktası, saat ve transfer aracı bilgisi",
+          "Telefon ve değerli eşyalar için su geçirmez kılıf veya emanet planı",
+          "Hava ve program değişikliği olursa iletişim kanalı",
         ],
       },
     ],
@@ -505,6 +529,17 @@ export const antalyaPages: PageContent[] = [
           { title: "Konyaaltı'nda gün batımı kokteyli", text: "Beach club'ta ayakta kokteyl, kısa konuşma ve DJ; hava için kapalı alan alternatifi.", group: "150 kişi", duration: "Akşamüstü", format: "Beach club", media: "scenario-gala-beach" },
         ],
       },
+      {
+        kind: "index",
+        eyebrow: "Şehir maliyetleri",
+        title: "Şehir içi mekân bütçesini etkileyen dört unsur",
+        items: [
+          { title: "Ulaşım ve transfer", text: "Otel ile mekân arası mesafe, trafik yoğunluğu ve geç saat dönüş ihtiyacı araç sayısını ve vardiyayı belirler." },
+          { title: "Ekipman taşıma", text: "Kaleiçi gibi erişimi kısıtlı bölgelerde ekipman daha fazla işgücü ve zaman gerektirir; bu maliyet teklife yansır." },
+          { title: "İzin ve resmî süreçler", text: "Açık alan, müzik ve kapanış saati için gerekli izinler baştan planlanmalıdır; geç alınan izin programı değiştirebilir." },
+          { title: "Sezon ve gün", text: "Hafta içi ve düşük sezonda aynı mekân belirgin biçimde daha uygun şartlarla kullanılabilir." },
+        ],
+      },
     ],
     faq: [
       {
@@ -586,6 +621,17 @@ export const antalyaPages: PageContent[] = [
           "Uluslararası gruplarda dil ihtiyacı roller bazında belirtilmelidir.",
           "Açık hava etkinliklerinde sıcaklık için mola, gölge ve su planı yapılmalıdır.",
           "Gece etkinliklerinde personelin dönüş transferi planlanmalıdır.",
+        ],
+      },
+      {
+        kind: "steps",
+        eyebrow: "Süreç",
+        title: "Talepten sahaya dört adım",
+        items: [
+          { title: "Talep", text: "Etkinlik tarihi, saat, rol ve kişi sayısı, dil ihtiyacı ve kıyafet beklentisi formda iletilir." },
+          { title: "Profil önerisi", text: "Rol ve etkinliğin tonuna uygun adaylar önerilir; gerekirse kısa görüşme veya fotoğraf onayı yapılır." },
+          { title: "Brifing", text: "Etkinlikten önce program, mekân planı ve kurallar anlatılır; kıyafet ve buluşma saati teyit edilir." },
+          { title: "Sahada yönetim", text: "Supervisor ekibi yönetir; mola, görev değişimi ve gün sonu kapanışı koordine edilir." },
         ],
       },
     ],

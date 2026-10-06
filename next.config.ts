@@ -10,6 +10,8 @@ const securityHeaders = [
 const config: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // Kritik CSS HTML içine gömülür: render-blocking stylesheet isteği ortadan kalkar (LCP).
+  experimental: { inlineCss: true },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 640, 768, 1024, 1280, 1600, 1920],

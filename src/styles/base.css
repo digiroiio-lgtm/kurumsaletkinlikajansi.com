@@ -48,7 +48,7 @@ button { cursor: pointer; }
 .h1--guide { font-size: clamp(2rem, 1.1rem + 3.4vw, 3.4rem); line-height: 1.08; }
 .h2 { font-size: clamp(1.75rem, 1.1rem + 2.4vw, 3rem); line-height: 1.1; }
 .h2--article { font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.1rem); margin: 56px 0 16px; }
-.h2--article:first-child { margin-top: 0; }
+.article > div:first-child > .h2--article { margin-top: 0; }
 .h2--light, .section--ink .h1, .section--ink .h2, .section--ink .h3 { color: var(--white); }
 .h3 { font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.55rem); line-height: 1.22; }
 

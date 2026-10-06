@@ -18,7 +18,7 @@
 
 .dash-list { margin-top: 24px; display: grid; gap: 10px; }
 .dash-list li { position: relative; padding-left: 28px; color: var(--text); }
-.dash-list li::before { content: ""; position: absolute; left: 0; top: 0.8em; width: 16px; height: 1.5px; background: var(--clay); }
+.dash-list li::before { content: ""; position: absolute; left: 0; top: 0.85em; width: 16px; height: 2px; background: var(--clay); }
 .dash-list--light li { color: var(--mist); }
 .dash-list--light li::before { background: var(--gold); }
 

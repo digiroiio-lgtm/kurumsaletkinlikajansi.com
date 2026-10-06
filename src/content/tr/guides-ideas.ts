@@ -75,6 +75,21 @@ export const guidesIdeas: Guide[] = [
           "Antalya ve Belek'te bu fikirlerin çoğunu uygulayabileceğiniz mekânlar var; [kurumsal etkinlik organizasyonu](/kurumsal-etkinlik-organizasyonu) sayfasında hizmet kapsamımızı görebilirsiniz.",
         ],
       },
+      {
+        h2: "Fikirleri elemek için üç filtre",
+        paras: ["Elinizde on fikir varsa, aşağıdaki üç filtreyle ikiye ya da üçe indirin:"],
+        bullets: [
+          "**Hedef uyumu:** Fikir, başta yazdığınız hedefe doğrudan hizmet ediyor mu, yoksa sadece eğlenceli mi?",
+          "**Katılım kolaylığı:** Yaş, kondisyon, inanç, diyet ve çalışma düzeni açısından ekibin tamamı rahatça katılabilir mi?",
+          "**Uygulama riski:** Hava, izin, güvenlik ve tedarikçi bağımlılığı fikrin getirisine değer mi?",
+        ],
+      },
+      {
+        h2: "Sık yapılan hatalar",
+        paras: [
+          "En sık hata, etkinliği en gürültülü ve en enerjik katılımcıya göre kurmaktır; sessiz veya yeni çalışanlar kenarda kalır. İkinci hata, tek güne çok fazla fikir sığdırmaktır: yoğun bir gün, iyi bir günden daha az hatırlanır. Üçüncü hata ise kapanışta kısa bir değerlendirme yapmamaktır; deneyim iş hayatına bağlanmadığı için etkisi hızla kaybolur.",
+        ],
+      },
     ],
     faq: [
       {
@@ -153,6 +168,22 @@ export const guidesIdeas: Guide[] = [
         paras: [
           "Etkinlik sonrası kısa bir anket (katılım, memnuniyet, aidiyet hissi) ve birkaç hafta sonra yinelenen mini bir ölçüm yeterlidir. Ayrıca gözlem de önemlidir: ekip içi sohbet artıyor mu, etkinlikten sonra yeni iş birlikleri doğuyor mu?",
           "Tek büyük bir etkinlik yerine yıl içine yayılmış küçük etkinlikler ritim yaratır ve çoğu zaman daha verimlidir.",
+        ],
+      },
+      {
+        h2: "Motivasyon etkinliğinde yapılan hatalar",
+        paras: ["Aşağıdaki hatalar, iyi niyetli etkinliklerin bile ters etki yaratmasına neden olur:"],
+        bullets: [
+          "**Zorunlu eğlence:** Katılımı zorunlu kılmak etkinliği mesai uzantısına çevirir.",
+          "**Genel övgü:** ‘Hepinize teşekkürler’ somut değildir; kişiye ve katkıya özgü teşekkür çalışır.",
+          "**Tek seferlik büyük etkinlik:** Yıl boyu hiçbir şey yapmayıp tek gece harcamak, ritim yaratmaz.",
+          "**Yöneticiyi sahneye almak:** Takdirin merkezine yönetici değil çalışan konmalıdır.",
+        ],
+      },
+      {
+        h2: "Basit bir yıllık takvim örneği",
+        paras: [
+          "Yılı dört döneme bölün: yeni yıl açılışında hedef paylaşımı, baharda ofis dışı bir gün, sonbaharda bir atölye ve yıl sonunda bir takdir gecesi. Aralarda her ay küçük, düşük maliyetli bir buluşma ekleyin. Bu yapı hem bütçeyi yıla yayar hem de çalışanın etkinliği ‘beklediği’ bir ritim oluşturur.",
         ],
       },
     ],
@@ -249,6 +280,23 @@ export const guidesIdeas: Guide[] = [
           "En iyi fikir bile kötü yürütülürse etkisini kaybeder. Süre, güvenlik, ekipman, hava planı ve kapanıştaki değerlendirme konuşması fikrin kendisi kadar önemlidir. Antalya ve Belek'te uygulanabilir örnekler için [team building](/team-building) sayfasına bakabilirsiniz.",
         ],
       },
+      {
+        h2: "Grup büyüklüğüne göre ayarlama",
+        paras: [
+          "Aynı fikir farklı büyüklükte gruplarda farklı çalışır. 10–20 kişide mutfak atölyesi veya şehir görevi ideal; 30–80 kişide takımlara bölünmüş keşif oyunu ve atölye istasyonları; 100 kişiyi aşan gruplarda ise plaj olimpiyatı gibi istasyon sistemiyle yönetilen formatlar uygundur. Büyük gruplarda her takıma bir saha lideri atamak ve zamanlamayı sıkı tutmak, etkinliğin dağılmasını önler.",
+        ],
+      },
+      {
+        h2: "Sık yapılan hatalar",
+        paras: ["Team building etkinliklerinde tekrar eden hatalar:"],
+        bullets: [
+          "Hedef belirlemeden ‘eğlenceli’ bir aktivite seçmek",
+          "Aşırı rekabeti teşvik edip ekibi bölmek",
+          "Fiziksel kapasitesi farklı katılımcıları hesaba katmamak",
+          "Kapanışta değerlendirme konuşması yapmamak",
+          "Hava ve ulaşım için yedek plan hazırlamamak",
+        ],
+      },
     ],
     faq: [
       {
@@ -329,6 +377,22 @@ export const guidesIdeas: Guide[] = [
         h2: "Oyunları profesyonel etkinliğe dönüştürmek",
         paras: [
           "Küçük oyunlar toplantı aralarında harika çalışır; ancak yarım gün veya tam gün bir etkinlik için süre, güvenlik, ekipman ve değerlendirme planı gerekir. Bunun için [team building](/team-building) hizmetimizi inceleyebilirsiniz.",
+        ],
+      },
+      {
+        h2: "Oyun sonrası değerlendirme soruları",
+        paras: ["Oyunun değeri, sonrasındaki beş dakikalık konuşmada ortaya çıkar. Şu soruları kullanabilirsiniz:"],
+        bullets: [
+          "Takımınızda kim liderlik üstlendi ve bu nasıl oluştu?",
+          "En büyük iletişim kopukluğu nerede yaşandı?",
+          "Bir sonraki sefere neyi farklı yapardınız?",
+          "Bu oyundaki hangi durum, günlük işimizde karşılaştığımız bir durumu hatırlatıyor?",
+        ],
+      },
+      {
+        h2: "Oyunları uygularken pratik notlar",
+        paras: [
+          "Malzemeyi önceden hazırlayıp takım sayısı kadar paket yapın; kuralları ekranda veya basılı olarak gösterin ve süreyi herkesin görebileceği bir yere yansıtın. Fiziksel hareket gerektiren oyunlarda alanı güvenli hale getirin, yer kaygan veya engelli ise bunu atlayın. Rekabeti puandan çok ortak hedefe bağlamak, oyunun ekibi bölmesini engeller.",
         ],
       },
     ],
@@ -412,6 +476,24 @@ export const guidesIdeas: Guide[] = [
           "Antalya çevresinde nehir, kanyon, dağ ve deniz bir arada olduğundan outdoor etkinlik için zengin seçenek sunar; rota ve transfer ayrıntıları için [Antalya outdoor aktiviteler](/antalya/kurumsal-outdoor-aktiviteler) sayfasına bakın. Güvenlik çerçevesi için [kurumsal outdoor aktiviteler](/kurumsal-outdoor-aktiviteler) sayfası yararlıdır.",
         ],
       },
+      {
+        h2: "Hava planı nasıl yapılır?",
+        paras: [
+          "Her outdoor program için üç şey tanımlayın: karar saati, alternatif ve iptal kriteri. Karar saati, etkinlikten bir gün önce ve etkinlik sabahı olabilir; alternatif kapalı alana taşınan benzer bir aktivite ya da saat kaydırma; iptal kriteri ise yağış miktarı, rüzgâr hızı veya su seviyesi gibi ölçülebilir bir eşiktir. Bu üçlü etkinlik günü verilecek kararı kolaylaştırır.",
+        ],
+      },
+      {
+        h2: "Lojistik kontrol listesi",
+        paras: [],
+        bullets: [
+          "Transfer araçları, kalkış saatleri ve dönüş planı",
+          "Su, atıştırmalık ve öğle yemeği; özel diyet notları",
+          "Tuvalet, soyunma ve eşya emanet imkânı",
+          "Güneş kremi, şapka, uygun ayakkabı ve yedek kıyafet bilgisi",
+          "İlk yardım, iletişim hattı ve acil durum sorumlusu",
+          "Fotoğraf ve video için sorumlu kişi",
+        ],
+      },
     ],
     faq: [
       {
@@ -485,6 +567,18 @@ export const guidesIdeas: Guide[] = [
         h2: "Büyük ve prodüksiyonlu etkinlik gerektiğinde",
         paras: [
           "Yıl sonu kutlaması, çalışan günü veya yıldönümü gibi büyük etkinlikler profesyonel planlama gerektirir. [Şirket motivasyon etkinlikleri](/sirket-motivasyon-etkinlikleri) sayfasında yıl boyunca bir etkinlik ritmi kurmaya yönelik yaklaşımımızı bulabilirsiniz.",
+        ],
+      },
+      {
+        h2: "Katılımı artırmanın yolları",
+        paras: [
+          "Sosyal etkinliklerde katılım çoğunlukla fikirden değil zamanlamadan ve davetin biçiminden etkilenir. Mesai içine yerleştirin, tek bir kişiye değil gruba sorumluluk verin ve çalışanlardan gelen fikirleri uygulayın. İlk birkaç etkinlikte yönetimin görünür biçimde katılması örnek oluşturur; ancak etkinliğin sahibi çalışanlar olmalıdır.",
+        ],
+      },
+      {
+        h2: "Ölçmek için basit göstergeler",
+        paras: [
+          "Karmaşık araçlara gerek yok: katılım oranı, tekrar katılım ve etkinlik sonrası tek soruluk bir anket (‘Bu etkinlik sizi ekibinize daha yakın hissettirdi mi?’) yeterli. Üç ay boyunca takip ettiğinizde hangi formatların işe yaradığı netleşir.",
         ],
       },
     ],
@@ -581,6 +675,18 @@ export const guidesIdeas: Guide[] = [
           "Antalya'da bu fikirlerin çoğunu tek bir programda birleştirmek mümkündür. Hangi bölgede ne yapılacağını ve transferi birlikte planlamak için [Antalya kurumsal etkinlik](/antalya/kurumsal-etkinlik) sayfasına bakın.",
         ],
       },
+      {
+        h2: "Örnek bir günlük program",
+        paras: [
+          "Şehir merkezinde tek günlük bir program şöyle kurulabilir: sabah otelde kısa bir oturum, öğleye doğru Kaleiçi'nde yönlendirmeli şehir görevi, öğle yemeği rotanın sonunda tarihî bir avluda, öğleden sonra Konyaaltı'nda sahil yürüyüşü veya atölye ve akşam gün batımında ortak yemek. Her bölüm arasında yürüme veya kısa araç mesafesi olduğu için gün verimli geçer.",
+        ],
+      },
+      {
+        h2: "Transfer ve zamanlama notları",
+        paras: [
+          "Antalya'da farklı yönlere uzanan aktiviteleri aynı güne sıkıştırmayın; Köprülü Kanyon gibi uzak rotalar yarım günü transfere harcatabilir. Yaz aylarında gündüz sıcaklığı yüksek olduğundan açık hava bölümlerini sabaha veya akşamüstüne alın; sıcak saatlerde kapalı veya gölgeli bir aktivite planlayın.",
+        ],
+      },
     ],
     faq: [
       {
@@ -663,6 +769,23 @@ export const guidesIdeas: Guide[] = [
         paras: [
           "Belek'te iyi bir team building günü şu akışı izleyebilir: sabah golf kliniği veya orman görevi, öğle yemeği, öğleden sonra plaj yarışları ve akşam ortak yemek ve ödül anı. Aralarda mola ve su planlamak, özellikle yazın önemlidir.",
           "Belek'teki format ve mekân seçenekleri için [Belek team building](/belek/team-building) sayfasına bakabilirsiniz.",
+        ],
+      },
+      {
+        h2: "Resort içinde rezervasyon ve izinler",
+        paras: [
+          "Belek'te golf sahası, spor alanları ve plaj bölümleri resort ve kulüp kurallarına tabidir. Golf sahası saatleri ve plaj alanı kullanımı önceden rezerve edilmeli; ekipman ve antrenör desteği için kulüple netleşme yapılmalıdır. Programı tarihe sabitlemeden önce bu rezervasyonları doğrulamak, plan değişikliği riskini azaltır.",
+        ],
+      },
+      {
+        h2: "Bütçeyi etkileyen unsurlar",
+        paras: ["Belek team building bütçesini en çok etkileyen kalemler:"],
+        bullets: [
+          "Golf sahası ve antrenör ücretleri (sahaya ve sezona göre)",
+          "Plaj ve ekipman kullanımı, su sporları ekipmanı",
+          "Resort'un yiyecek-içecek şartları",
+          "Takım sayısına göre saha lideri ve ekipman adedi",
+          "Konaklama ve program süresi",
         ],
       },
     ],

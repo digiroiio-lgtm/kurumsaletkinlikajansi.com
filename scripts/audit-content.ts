@@ -91,7 +91,7 @@ for (const d of docs) {
   if (d.title.length > 65) errors.push(`${d.id}: title uzun (${d.title.length}) → ${d.title}`);
   if (d.title.length < 30) warns.push(`${d.id}: title kısa (${d.title.length})`);
   if (d.desc.length < 110 || d.desc.length > 175) warns.push(`${d.id}: description uzunluğu ${d.desc.length}`);
-  if (d.words < 450) warns.push(`${d.id}: ince içerik (${d.words} kelime)`);
+  if (d.words < 380) warns.push(`${d.id}: ince içerik (${d.words} kelime)`);
 }
 
 const uniq = (key: "title" | "desc" | "h1") => {

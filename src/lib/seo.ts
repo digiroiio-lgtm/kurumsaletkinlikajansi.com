@@ -19,7 +19,7 @@ export function buildMetadata({ title, description, path, type = "website", publ
     title: { absolute: title },
     description,
     alternates: { canonical: url, languages: hreflangFor(path) },
-    robots: noindex ? { index: false, follow: false } : { index: true, follow: true },
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     openGraph: {
       type,
       url,

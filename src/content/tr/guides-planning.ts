@@ -71,6 +71,24 @@ export const guidesPlanning: Guide[] = [
           "Hava, gecikme, teknik arıza ve tedarikçi sorunu için yedek senaryolar planlayın. Etkinlik günü tek karar merkezi (supervisor veya proje yöneticisi) ve net iletişim hattı olması gerekir. Bu rolleri tek ekibe vermek isterseniz [kurumsal etkinlik organizasyonu](/kurumsal-etkinlik-organizasyonu) hizmetimizi inceleyin.",
         ],
       },
+      {
+        h2: "Roller ve sorumluluklar",
+        paras: [
+          "Etkinlik planında kimin neden sorumlu olduğunu baştan yazın: karar veren (onay), proje yöneticisi (koordinasyon), tedarikçiler (uygulama) ve bilgilendirilecek kişiler. Bu netlik, son haftada yaşanan ‘kim karar verecek?’ karmaşasını önler. Ajansla çalışıyorsanız tek bir muhatap belirleyin.",
+        ],
+      },
+      {
+        h2: "Etkinlik günü kontrol listesi",
+        paras: [],
+        bullets: [
+          "Katılımcı listesi, yaka kartları ve kayıt masası hazır mı?",
+          "Ses, görüntü ve sunumlar test edildi mi?",
+          "Servis ve catering saatleri program akışıyla uyumlu mu?",
+          "Transfer araçları ve sürücü iletişimi netleşti mi?",
+          "Yedek plan ve karar sorumlusu belli mi?",
+          "Fotoğraf-video ve içerik sorumlusu atandı mı?",
+        ],
+      },
     ],
     faq: [
       {
@@ -157,6 +175,18 @@ export const guidesPlanning: Guide[] = [
             ["Referans ve örnek içerik", "Örnek program ve içerik paylaşımı", "Yalnızca fotoğraf galerisi"],
           ],
         },
+      },
+      {
+        h2: "Karar tablosu nasıl uygulanır?",
+        paras: [
+          "Yedi kriter için her aday formata 1–5 arası puan verin ve hedef uyumuna iki katı ağırlık tanıyın. Toplam puanı yüksek olan iki-üç formatı sağlayıcıyla görüşün. Bu basit yöntem, kararın duygusal beğeniye değil kriterlere dayanmasını sağlar ve ekip içinde gerekçe sunmayı kolaylaştırır.",
+        ],
+      },
+      {
+        h2: "Küçük deneme (pilot) önerisi",
+        paras: [
+          "Yeni bir formatı büyük bir gruba uygulamadan önce küçük bir grupla (8–10 kişi) denemek riski azaltır. Pilot, hem sürenin hem de zorluk düzeyinin doğru ayarlanmasını sağlar. Zaman ve bütçe elverişliyse bu yaklaşım özellikle yüksek yatırımlı programlar için değerlidir. Hedefe uygun formatları ve ekip büyüklüğüne göre seçenekleri [team building hizmeti](/team-building) sayfasından inceleyebilirsiniz.",
+        ],
       },
     ],
     faq: [
@@ -250,6 +280,18 @@ export const guidesPlanning: Guide[] = [
           "Bütçe çerçevenizi paylaşın; uygun formatları, alternatifleri ve kalem kalem teklifi birlikte çıkaralım. Süreç için [kurumsal etkinlik organizasyonu](/kurumsal-etkinlik-organizasyonu) sayfasına bakabilirsiniz.",
         ],
       },
+      {
+        h2: "Kişi başı hesaplamanın tuzakları",
+        paras: [
+          "Kişi başı rakam kullanışlıdır ancak yanıltıcı olabilir: sabit maliyetler (sahne, ışık, ajans yönetimi) katılımcı sayısı arttıkça kişi başına düşer. 40 kişilik bir etkinlikte kişi başı yüksek görünen maliyet, 120 kişide belirgin biçimde düşebilir. Karşılaştırma yaparken aynı katılımcı sayısı ve aynı kapsam üzerinden hesaplama yapın.",
+        ],
+      },
+      {
+        h2: "Ödeme planı ve opsiyon yönetimi",
+        paras: [
+          "Mekân ve otel opsiyonlarının bitiş tarihlerini takvime yazın; kararı geciktirmek hem fiyat hem müsaitlik kaybettirir. Ödeme planı kapsamında ön ödeme, ara ödeme ve kapanış ödemesi tarihlerini sözleşmeye bağlayın ve iptal durumunda hangi bedellerin iade edileceğini netleştirin.",
+        ],
+      },
     ],
     faq: [
       {
@@ -339,6 +381,18 @@ export const guidesPlanning: Guide[] = [
           "Antalya ve Belek odaklı çalışıyor, brief ile başlıyor, kalemleri ayrı gösteriyor ve etkinlik günü sahada yönetimi üstleniyoruz. Hizmet kapsamımız için [kurumsal etkinlik organizasyonu](/kurumsal-etkinlik-organizasyonu) sayfasına bakabilir, doğrudan teklif isteyebilirsiniz.",
         ],
       },
+      {
+        h2: "Teklif toplantısında nelere bakılır?",
+        paras: [
+          "Teklif sunumunda ajansın sizi dinleyip dinlemediğine, sorduğu sorulara ve riskleri açıkça konuşup konuşmadığına dikkat edin. İyi bir ajans ‘her şey mükemmel olacak’ demez; neyin riskli olduğunu, bunu nasıl yöneteceğini ve sizden hangi kararı ne zaman beklediğini söyler.",
+        ],
+      },
+      {
+        h2: "Referans ve sözleşme kontrolü",
+        paras: [
+          "Referans sorarken yalnızca fotoğraf değil, benzer ölçekte bir etkinliğin akışını ve sorun yaşandığında nasıl çözüldüğünü isteyin. Sözleşmede kapsam, iptal ve tarih değişikliği koşulları, ödeme takvimi ve sorumluluk dağılımı yazılı olmalıdır; sözlü vaatlere güvenmeyin.",
+        ],
+      },
     ],
     faq: [
       {
@@ -424,6 +478,18 @@ export const guidesPlanning: Guide[] = [
           "Antalya'daki mekân seçeneklerini ve ulaşım notlarını [Antalya etkinlik mekânları](/antalya/kurumsal-etkinlik-mekanlari) sayfasında; hizmet olarak mekân bulmayı ise [kurumsal etkinlik mekânları](/kurumsal-etkinlik-mekanlari) sayfasında bulabilirsiniz.",
         ],
       },
+      {
+        h2: "Ses, izin ve komşuluk",
+        paras: [
+          "Şehir içi mekânlarda ses ve çevre ilişkisi belirleyicidir. Konut veya otel komşuları, kapanış saati ve açık alan izinleri etkinliğin kurgusunu doğrudan etkiler. Bunları mekâna sormadan sözleşme yapmayın; özellikle müzik ve havai fişek gibi unsurlar için yazılı onay alın.",
+        ],
+      },
+      {
+        h2: "Hava ve yedek plan",
+        paras: [
+          "Açık havada kurulacak her etkinlik için kapalı alan alternatifi şarttır. Antalya'da yağış genellikle kısa sürelidir ancak yağdığında akşam programı aksayabilir. Karar saatini, alternatif mekânı ve kurulum süresini sözleşme aşamasında netleştirin.",
+        ],
+      },
     ],
     faq: [
       {
@@ -505,6 +571,24 @@ export const guidesPlanning: Guide[] = [
         paras: [
           "Belek'te fiyatlar sezona göre belirgin değişir. Yüksek sezonda doluluk ve fiyatlar zirvede olur; ilkbahar, sonbahar ve kış aylarında daha esnek koşullar mümkündür. Tarih esnekliği ciddi bir bütçe avantajıdır.",
           "Belek'teki seçenekler için [Belek etkinlik mekânları](/belek/kurumsal-etkinlik-mekanlari) sayfasına; destinasyon seçimi için [Antalya mı, Belek mi?](/rehberler/antalya-mi-belek-mi) rehberine bakın.",
+        ],
+      },
+      {
+        h2: "Gruba göre resort tipi",
+        paras: [
+          "Küçük ve odaklı gruplar için daha sakin, düşük yoğunluklu resort'lar; büyük bayi ve incentive grupları için geniş kongre ve balo salonları olan resort'lar uygundur. Aile katılımlı etkinliklerde çocuk alanı ve aile odaları ön plana çıkar. Resort'un kendi kitlesi (aile, golf, wellness) etkinlik atmosferini etkiler; grubunuzla uyumlu bir resort seçin.",
+        ],
+      },
+      {
+        h2: "Sözleşmede kontrol edilecek maddeler",
+        paras: [],
+        bullets: [
+          "Oda ve salon tahsisi, serbest bırakma (release) tarihi",
+          "Yiyecek-içecek minimum harcaması ve menü fiyatları",
+          "Prodüksiyon kuralları: giriş saati, ses sınırı, elektrik",
+          "İptal, tarih değişikliği ve kısmi iptal koşulları",
+          "Ödeme planı ve kur sabitleme tarihi",
+          "Alternatif alan (hava) hakkı",
         ],
       },
     ],
@@ -594,6 +678,18 @@ export const guidesPlanning: Guide[] = [
         h2: "İkisini birleştirmek",
         paras: [
           "Birçok grup konaklamayı Belek'te yapıp bir günü Antalya'nın tarihî merkezine veya antik kentlere ayırır; böylece resort konforu ve şehir deneyimi aynı programda buluşur. Detaylar için [Antalya kurumsal etkinlik](/antalya/kurumsal-etkinlik) ve [Belek kurumsal etkinlik](/belek/kurumsal-etkinlik) sayfalarına bakın.",
+        ],
+      },
+      {
+        h2: "Maliyet mantığı",
+        paras: [
+          "Belek'te konaklama, toplantı ve yemek genellikle tek resort teklifi içinde toplanır; bu da bütçe tahminini kolaylaştırır ancak yiyecek-içecekte esnekliği azaltır. Antalya'da mekân, konaklama ve aktiviteyi ayrı ayrı seçmek, bütçeyi kalem kalem optimize etme imkânı verir ancak koordinasyon yükünü artırır. İki destinasyonda da tarih esnekliği ve omuz sezonlar bütçenin en büyük kaldıraçlarıdır.",
+        ],
+      },
+      {
+        h2: "Örnek senaryo: 80 kişilik satış toplantısı",
+        paras: [
+          "Eğer toplantı iki gün sürecek, katılımcılar konaklayacak ve akşam gala yapılacaksa Belek'te tek resort pratiktir: salon, oda, gala ve plaj aynı yerdedir. Aynı toplantıya şehir tarihini ve doğa aktivitesini eklemek isterseniz Antalya'da şehir oteli ve bir aktivite günü daha çeşitli bir deneyim sunar. Belirleyici olan toplantının önceliğidir: içerik mi, deneyim mi?",
         ],
       },
     ],

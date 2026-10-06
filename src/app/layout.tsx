@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource-variable/fraunces";
-import "@fontsource-variable/manrope";
+import { preload } from "react-dom";
+import "@/styles/fonts.css";
 import "@/styles/tokens.css";
 import "@/styles/base.css";
 import "@/styles/layout.css";
@@ -33,7 +33,11 @@ export const viewport: Viewport = {
   themeColor: "#faf7f1",
 };
 
+const FONTS = ["fraunces-latin", "manrope-latin", "fraunces-tr", "manrope-tr"];
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  // Kritik yoldaki fontlar CSS'ten keşfedilmeden önce preload edilir (LCP metin öğesi için).
+  for (const f of FONTS) preload(`/fonts/${f}.woff2`, { as: "font", type: "font/woff2", crossOrigin: "anonymous" });
   return (
     <html lang={SITE.language}>
       <body>

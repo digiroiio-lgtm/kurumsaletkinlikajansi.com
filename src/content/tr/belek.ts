@@ -176,6 +176,19 @@ export const belekPages: PageContent[] = [
           { label: "Kurumsal outdoor aktiviteler", href: "/kurumsal-outdoor-aktiviteler", text: "Açık hava güvenlik ve planlama çerçevesi." },
         ],
       },
+      {
+        kind: "checklist",
+        eyebrow: "Hazırlık",
+        title: "Belek'te team building gününden önce netleştirilenler",
+        items: [
+          "Golf sahası ve plaj alanı için saat rezervasyonu",
+          "Antrenör, ekipman ve bisiklet/su sporları ekipmanı sayısı",
+          "Takım sayısı, saha lideri ataması ve puanlama sistemi",
+          "Su, gölge, güneş koruması ve mola planı (özellikle yaz)",
+          "Yağmur veya rüzgâr durumunda kapalı alan alternatifi",
+          "Katılımcıların kıyafet, ayakkabı ve sağlık bilgilendirmesi",
+        ],
+      },
     ],
     faq: [
       {
@@ -259,6 +272,19 @@ export const belekPages: PageContent[] = [
         items: [
           { title: "Seçkin satış ekibi için üç günlük program", text: "Üç gün, golf turnuvası ve plaj gala'sı; her katılımcıya özel karşılama ve hediye.", group: "60 kişi", duration: "3 gün · 2 gece", format: "Golf + plaj gala", media: "scenario-belek-incentive" },
           { title: "Eşli katılımlı bayi incentive'i", text: "Eşler için ayrı spa ve kültür günü, ortak akşam gala'sı; iki akış tek lojistik planı altında.", group: "90 kişi", duration: "3 gün · 2 gece", format: "Resort + eş programı", media: "scenario-belek-spouse" },
+        ],
+      },
+      {
+        kind: "checklist",
+        eyebrow: "Resort seçimi",
+        title: "Incentive için resort'a sorulan kritik sorular",
+        items: [
+          "Grup için özel karşılama alanı ve hızlı check-in düzeni var mı?",
+          "Katılımcıya oda yükseltme veya özel oda tahsisi yapılabiliyor mu?",
+          "Plaj gala'sı için alan, ses sınırı ve kapanış saati nedir?",
+          "Golf, spa ve restoran rezervasyonları grup için garanti edilebilir mi?",
+          "Aynı dönemde otelde başka büyük grup bulunacak mı?",
+          "Dış prodüksiyon ve kendi sanatçı/DJ'imizi getirme kuralları neler?",
         ],
       },
     ],
@@ -352,6 +378,16 @@ export const belekPages: PageContent[] = [
           { title: "İnovasyon atölyesi", text: "Sonbaharda iki gün: atölye odaklı çalışma, golf kliniği ve gün batımı oturumu.", group: "30 kişi", duration: "2 gün", format: "Atölye + golf", media: "scenario-belek-golf" },
         ],
       },
+      {
+        kind: "split",
+        eyebrow: "Denge",
+        title: "Golf ve spa çalışmayı bölmeden nasıl dengelenir?",
+        body: [
+          "Retreat'te golf veya spa, çalışma gününün kesintisi değil dinlenme anıdır. En verimli yapı, çalışma oturumlarını sabah saatlerine yoğunlaştırıp öğleden sonrayı isteğe bağlı aktiviteye ayırmaktır: bir grup golf kliniğine, diğeri spa veya yürüyüşe gidebilir.",
+          "Akşam yemeği ortak tutulur; böylece ekip yeniden bir araya gelir ve gün sonu değerlendirmesi doğal olarak yapılır. Aktivite seçeneklerini önceden netleştirmek ve rezervasyonu grup adına yapmak gün içi karmaşayı önler.",
+        ],
+        tone: "sand",
+      },
     ],
     faq: [
       {
@@ -377,7 +413,7 @@ export const belekPages: PageContent[] = [
     kind: "destination",
     metaTitle: "Belek Kurumsal Etkinlik Mekanları | Resort ve Golf Kulübü",
     metaDescription:
-      "Belek'te kurumsal etkinlik mekanları: resort balo ve konferans salonları, golf kulübü binaları, plaj alanları ve Aspendos çevresi. Yiyecek-içecek ve ses kuralları dahil seçim rehberi.",
+      "Belek'te kurumsal etkinlik mekanları: resort balo ve konferans salonları, golf kulübü, plaj alanları. Yiyecek-içecek ve ses kuralları dahil seçim rehberi.",
     h1: "Belek Kurumsal Etkinlik Mekânları: Resort Salonlarından Golf Kulübüne",
     eyebrow: "Belek · Etkinlik mekânları",
     lead:
@@ -436,6 +472,17 @@ export const belekPages: PageContent[] = [
           "Oda kapasitesi ve grup oda tahsisi",
           "Havalimanına transfer süresi ve konum",
           "Sezon ve tarihlere göre doluluk riski",
+        ],
+      },
+      {
+        kind: "steps",
+        eyebrow: "Müzakere",
+        title: "Resort ile görüşme akışı",
+        items: [
+          { title: "Talep özeti", text: "Tarih, grup, program ve beklentiler tek sayfalık bir brief olarak birden fazla resort'a eş zamanlı iletilir." },
+          { title: "Teklif karşılaştırma", text: "Gelen teklifler aynı kalemlerle (oda, salon, menü, ekipman) tabloya alınır; eksik ve gizli maliyetler çıkarılır." },
+          { title: "Saha ziyareti", text: "Kısa listedeki resort'larda salon, plaj/bahçe ve servis akışı yerinde değerlendirilir." },
+          { title: "Pazarlık ve opsiyon", text: "Menü fiyatı, salon ücreti, oda tahsisi ve iptal koşulları pazarlık edilir; opsiyon yazılı bağlanır." },
         ],
       },
     ],
@@ -529,6 +576,16 @@ export const belekPages: PageContent[] = [
           { title: "Plajda 250 kişilik ödül gecesi", text: "Gün batımında karşılama, oturmalı yemek, ödül töreni, konser; hava için salon alternatifi hazır.", group: "250 kişi", duration: "Akşam", format: "Plaj + ödül", media: "scenario-gala-beach" },
           { title: "Resort bahçesinde 120 kişilik kokteyl gala'sı", text: "Bahçede ayakta kokteyl, kısa konuşma, canlı müzik; hafif prodüksiyon ve hızlı kurulum.", group: "120 kişi", duration: "Akşam", format: "Bahçe + kokteyl", media: "scenario-belek-garden" },
         ],
+      },
+      {
+        kind: "split",
+        eyebrow: "Servis",
+        title: "Gala'da menü ve servis akışı resort mutfağıyla kurulur",
+        body: [
+          "Belek'te gala yemeği çoğunlukla resort mutfağından gelir. Bu, servis hızını ve kalitesini mutfak kapasitesine bağlar: aynı anda yüzlerce tabağın çıkabilmesi için menü, servis noktası ve personel sayısı önceden planlanır.",
+          "Oturmalı menüde program anlarıyla (konuşma, ödül, müzik) servis akışı çakışmamalıdır; bu yüzden run-of-show'u mutfak şefiyle birlikte saat saat yazarız. Özel diyet ve alerji listeleri masa bazında servis ekibine verilir.",
+        ],
+        tone: "sand",
       },
     ],
     faq: [
